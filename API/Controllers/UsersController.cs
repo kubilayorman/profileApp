@@ -36,10 +36,7 @@ namespace API.Controllers
             //return _context.Users.Where(a => a.Id == id).Single();
             var user = await _context.Users.FindAsync(id);
 
-            return user;
-
-            
+            return user;            
         }
-
     }
 }
